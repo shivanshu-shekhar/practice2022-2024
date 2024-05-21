@@ -1,0 +1,9 @@
+#buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(10%,20%));
+    row-gap: 2px;
+    column-gap: 2px;
+}
+#dialogContainer {
+    width : 100px;
+}

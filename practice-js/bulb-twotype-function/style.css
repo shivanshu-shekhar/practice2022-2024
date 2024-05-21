@@ -1,0 +1,24 @@
+#switchBulbContainer, #discoBulb {
+    width: 240px;
+    height: 500px;
+    margin: auto;
+}
+
+#messageContainer, #switchContainer {
+    width: 240px;
+    margin: auto;
+}
+
+.glowing {
+    background-image: url('asset/bulb-on.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.not-glowing{
+    background-image: url('asset/bulb-off.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

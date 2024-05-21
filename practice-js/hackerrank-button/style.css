@@ -1,0 +1,18 @@
+#buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(10%,20%));
+    row-gap: 2px;
+    column-gap: 2px;
+}
+/* #dialogContainer {
+    position: fixed;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 1000;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+} */
