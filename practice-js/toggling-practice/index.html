@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+        <style>
+            #unique-id {
+                /* background-color: #f0f0f0; */
+                padding: 10px;
+            }
+
+            .class1 {
+                background-color: blue;
+                color: black;
+                /* font-weight: bold; */
+            }
+
+            .class2 {
+                background-color: green;
+                color: black;
+            }
+
+            .class3 {
+                background-color: red;
+                color: black;
+                /* border: 1px solid #ccc; */
+            }
+        </style>
+    </head>
+
+    <body>
+    <div id="unique-id" class="class1">This is a div element with three classes and one ID.</div>
+    <button id="toggle-btn">Toggle Classes</button>
+        <script>const btn = document.getElementById("toggle-btn");
+            const div = document.getElementById("unique-id");
+
+            const classes = ["class1", "class2", "class3"];
+            let currentClassIndex = 0;
+
+            btn.addEventListener("click", () => {
+                div.classList.remove(classes[currentClassIndex]);
+                currentClassIndex = (currentClassIndex + 1) % classes.length;
+                //very important concept 0->1->2->0->1->2........
+                div.classList.add(classes[currentClassIndex]);
+            });
+        </script>
+    </body>
+
+</html>
+<!-- there are multiple ways of toggling (1) is on-off toggling 2 classes using switch 
+it turns to next class (2) toggling more then 2 using formula (x=x+1%arr.length) for 
+moving in circle classList.remove and classList.add are also used but it goes next 
+only then at last finall restarts from 0th index (3) use of 2 buttons it goes forward and backward 
+also be used for(2)nd one here also classList.remove and classList.add is used but instead of formula 
+here its x++ and becomes 0 if it was 2 and x-- and becomes 2 if x was 0.
+-->
