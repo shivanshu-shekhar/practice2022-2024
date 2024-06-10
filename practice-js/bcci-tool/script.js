@@ -7,6 +7,7 @@ let sortDirection = {
     bowlingSkill: 1,
     fieldingSkill: 1
 };  
+//fetching json file data,converting the json to normal form ,putting the data in another array
 fetch('players.json')
   .then(response => response.json())
   .then(data => {
