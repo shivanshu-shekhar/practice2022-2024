@@ -1,0 +1,56 @@
+//1 async function to have control flow
+async function weatherApp(){
+  let delhiWeather = new Promise((resolve,reject)=>{
+    setTimeout(function() {resolve('43 degree')},5000);
+  })
+  let bangaloreWeather = new Promise((resolve,reject)=>{
+    setTimeout(function() {resolve('39 degree')},2000);
+  })
+  let delhi = await delhiWeather;
+  let bangalore = await bangaloreWeather;
+  return [delhi,bangalore];
+}
+let arr =  weatherApp();
+  //console.log(arr); wrong 
+  arr.then((value) => {
+    console.log(value);
+  })//right approach
+
+//2 async function and want to have flow i.e. 1st one peice should get excuted then another
+
+async function weatherApp(){
+  let delhiWeather = new Promise((resolve,reject)=>{
+    setTimeout(function() {resolve('43 degree')},1000);
+  })
+  let bangaloreWeather = new Promise((resolve,reject)=>{
+    setTimeout(function() {resolve('39 degree')},2000);
+  })
+  let delhi = await delhiWeather;
+  let bangalore = await bangaloreWeather;
+  return [delhi,bangalore];
+}
+
+// A function that returns a promise that resolves after 2 seconds
+function delayedHello() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve("Hello!");
+    }, 5000);
+  });
+}
+
+// An async function that uses await to wait for the promise to resolve
+async function sayHello() {
+  console.log("Waiting for hello...");
+  const hello = await delayedHello();
+  console.log(hello); // Output: "Hello!"
+  
+  let arr =  weatherApp();
+  //console.log(arr);
+  arr.then((value) => {
+    console.log(value);
+  })
+}
+
+// Call the async function
+sayHello();
