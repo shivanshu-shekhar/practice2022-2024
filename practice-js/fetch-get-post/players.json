@@ -1,0 +1,42 @@
+[
+    {
+      "userid": 1,
+      "role": "Batsman",
+      "battingskill": "Right-handed",
+      "bowlingskill": "None",
+      "feildingskill": "Slip",
+      "name": "Virat Kohli"
+    },
+    {
+      "userid": 2,
+      "role": "All-rounder",
+      "battingskill": "Left-handed",
+      "bowlingskill": "Medium pace",
+      "feildingskill": "Point",
+      "name": "Ben Stokes"
+    },
+    {
+      "userid": 3,
+      "role": "Bowler",
+      "battingskill": "Right-handed",
+      "bowlingskill": "Fast",
+      "feildingskill": "Fine leg",
+      "name": "Jasprit Bumrah"
+    },
+    {
+      "userid": 4,
+      "role": "Wicket-keeper",
+      "battingskill": "Right-handed",
+      "bowlingskill": "None",
+      "feildingskill": "Wicket-keeper",
+      "name": "MS Dhoni"
+    },
+    {
+      "userid": 5,
+      "role": "All-rounder",
+      "battingskill": "Left-handed",
+      "bowlingskill": "Spin",
+      "feildingskill": "Cover",
+      "name": "Ravindra Jadeja"
+    }
+  ]
