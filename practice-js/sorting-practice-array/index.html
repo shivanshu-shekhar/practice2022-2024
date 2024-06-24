@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO WORLD!</h1>
+    <script>
+        let arr = [
+            { name: "Bob", number: 1 },
+            { name: "David", number: 4 },
+            { name: "Alice", number: 3 },
+            { name: "Charlie", number: 2 },
+        ];
+
+        arr.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+        console.log(arr);
+        //lexicograhically ascending do opposite a and b to get lexico descending based on name
+
+        let x = [...arr];
+        x.sort((a, b) => a.number - b.number);
+        console.log(x);
+        // ascending order do opposite to get descending order
+    </script>
+</body>
+</html>
