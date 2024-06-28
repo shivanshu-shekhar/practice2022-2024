@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Table with Delete Action</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .fade-out {
+      transition: opacity 0.5s ease-out;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>User Table</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Rows will be populated here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+ 
+  <script>
+    // Array of objects
+    const users = [
+      { name: 'John Doe', gender: 'Male', city: 'New York' },
+      { name: 'Jane Smith', gender: 'Female', city: 'Los Angeles' },
+      { name: 'Sam Brown', gender: 'Male', city: 'Chicago' },
+      { name: 'Lisa White', gender: 'Female', city: 'Houston' },
+      { name: 'Mike Davis', gender: 'Male', city: 'Phoenix' }
+    ];
+ 
+    // Function to render the table
+    function renderTable() {
+      const tableBody = document.getElementById('userTableBody');
+      tableBody.innerHTML = ''; // Clear existing rows
+      users.forEach((user, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+${user.name}</td>
+          <td>${user.gender}</td>
+${user.city}</td>
+          <td>
+            <button class="btn btn-danger" onclick="deleteRow(${index}, this)">Delete</button>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+ 
+    // Function to delete a row with transition
+    function deleteRow(index, button) {
+      const row = button.closest('tr');
+      row.classList.add('fade-out');
+      setTimeout(() => {
+        users.splice(index, 1); // Remove user from array
+        renderTable(); // Re-render table
+      }, 500); // Delay to match transition duration
+    }
+ 
+    // Initial render
+    renderTable();
+  </script>
+</body>
+</html>
