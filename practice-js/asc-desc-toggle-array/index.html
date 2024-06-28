@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array</title>
+    <style>
+        #array-display {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Sorter</h1>
+    <div id="array-display"></div>
+    <button id="sort-button">Sort Array</button>
+
+    <script>
+        // 1. Make an array of strings
+        let array = ["banana", "apple", "cherry", "date", "fig", "grape"];
+        let ascending = true;
+
+        // 2. Show the array
+        function displayArray() {
+            document.getElementById('array-display').innerText = array.join(", ");
+        }
+
+        // Display the initial array
+        displayArray();
+
+        // 3. Button click event to sort the array
+        document.getElementById('sort-button').addEventListener('click', () => {
+            if (ascending) {
+                array.sort((a, b) => a.localeCompare(b)); // Sort ascending
+            } else {
+                array.sort((a, b) => b.localeCompare(a)); // Sort descending
+            }
+            ascending = !ascending; // Toggle the sorting order
+            displayArray();
+        });
+    </script>
+</body>
+</html>
