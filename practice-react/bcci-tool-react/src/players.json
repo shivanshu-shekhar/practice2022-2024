@@ -1,0 +1,114 @@
+[
+    {
+      "name": "Rohit Sharma",
+      "type": "Batsman",
+      "battingSkill": 90,
+      "bowlingSkill": 40,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Virat Kohli",
+      "type": "Batsman",
+      "battingSkill": 95,
+      "bowlingSkill": 30,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Shikhar Dhawan",
+      "type": "Batsman",
+      "battingSkill": 85,
+      "bowlingSkill": 35,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "KL Rahul",
+      "type": "Wicket-keeper",
+      "battingSkill": 80,
+      "bowlingSkill": 25,
+      "fieldingSkill": 90
+    },
+    {
+      "name": "Rishabh Pant",
+      "type": "Wicket-keeper",
+      "battingSkill": 75,
+      "bowlingSkill": 20,
+      "fieldingSkill": 85
+    },
+    {
+      "name": "Hardik Pandya",
+      "type": "All-rounder",
+      "battingSkill": 70,
+      "bowlingSkill": 60,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Ravindra Jadeja",
+      "type": "All-rounder",
+      "battingSkill": 65,
+      "bowlingSkill": 70,
+      "fieldingSkill": 85
+    },
+    {
+      "name": "Jasprit Bumrah",
+      "type": "Bowler",
+      "battingSkill": 20,
+      "bowlingSkill": 95,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Mohammed Shami",
+      "type": "Bowler",
+      "battingSkill": 25,
+      "bowlingSkill": 90,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "Bhuvneshwar Kumar",
+      "type": "Bowler",
+      "battingSkill": 30,
+      "bowlingSkill": 85,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Yuzvendra Chahal",
+      "type": "Bowler",
+      "battingSkill": 15,
+      "bowlingSkill": 80,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Kuldeep Yadav",
+      "type": "Bowler",
+      "battingSkill": 20,
+      "bowlingSkill": 75,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "Shreyas Iyer",
+      "type": "Batsman",
+      "battingSkill": 80,
+      "bowlingSkill": 30,
+      "fieldingSkill": 75
+    },
+    {
+      "name": "Manish Pandey",
+      "type": "Batsman",
+      "battingSkill": 75,
+      "bowlingSkill": 25,
+      "fieldingSkill": 70
+    },
+    {
+      "name": "Washington Sundar",
+      "type": "All-rounder",
+      "battingSkill": 60,
+      "bowlingSkill": 65,
+      "fieldingSkill": 80
+    },
+    {
+      "name": "Deepak Chahar",
+      "type": "Bowler",
+      "battingSkill": 25,
+      "bowlingSkill": 80,
+      "fieldingSkill": 75
+    }
+  ]
