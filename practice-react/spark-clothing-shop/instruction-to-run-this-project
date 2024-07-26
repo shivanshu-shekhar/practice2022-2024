@@ -1,0 +1,5 @@
+(1st) do -> npm install 
+to intall node modules package.json helps here
+(2)then do -> npm run serve 
+to run serve script which is inside package.json dependencies to estalblish json-server on port 5001
+(3)npm start
