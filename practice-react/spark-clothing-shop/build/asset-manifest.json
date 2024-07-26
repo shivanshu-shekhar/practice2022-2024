@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6aaa0280.css",
+    "main.js": "/static/js/main.4deb6a11.js",
+    "static/css/17.115b6a76.chunk.css": "/static/css/17.115b6a76.chunk.css",
+    "static/js/17.7492a4b1.chunk.js": "/static/js/17.7492a4b1.chunk.js",
+    "static/js/787.5699328c.chunk.js": "/static/js/787.5699328c.chunk.js",
+    "static/media/feedback.png": "/static/media/feedback.e82b9ad1ab1ee4dc4a6d.png",
+    "static/media/contact.png": "/static/media/contact.80be3c83876462ac7974.png",
+    "static/media/Home.png": "/static/media/Home.e8692c38e7164bd9ccbe.png",
+    "static/media/thirtydays.png": "/static/media/thirtydays.79d932385035cf84cb1d.png",
+    "static/media/about-us.png": "/static/media/about-us.8e9705cc306aae890795.png",
+    "static/media/more-brands.jpg": "/static/media/more-brands.07ab4ee040f0ea02e5ca.jpg",
+    "static/media/page-not-found.jpg": "/static/media/page-not-found.daee85dc8f9df89c7bd0.jpg",
+    "static/media/getintouch.png": "/static/media/getintouch.b93f009c874788a732ed.png",
+    "static/media/LOGO.jpg": "/static/media/LOGO.6161f1434f8908bf48c9.jpg",
+    "static/media/ContactUs.png": "/static/media/ContactUs.557d67ea070549d21ecc.png",
+    "static/media/cash-delivery.jpeg": "/static/media/cash-delivery.a370a502b3e6de6ab741.jpeg",
+    "static/media/AboutUs.png": "/static/media/AboutUs.47d35e96c7e7241bd3e1.png",
+    "static/media/Product.png": "/static/media/Product.2f6c80859fcc4377e4b5.png",
+    "index.html": "/index.html",
+    "main.6aaa0280.css.map": "/static/css/main.6aaa0280.css.map",
+    "main.4deb6a11.js.map": "/static/js/main.4deb6a11.js.map",
+    "17.115b6a76.chunk.css.map": "/static/css/17.115b6a76.chunk.css.map",
+    "17.7492a4b1.chunk.js.map": "/static/js/17.7492a4b1.chunk.js.map",
+    "787.5699328c.chunk.js.map": "/static/js/787.5699328c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6aaa0280.css",
+    "static/js/main.4deb6a11.js"
+  ]
+}
