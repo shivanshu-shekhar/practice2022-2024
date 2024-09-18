@@ -1,0 +1,12 @@
+{
+  "reviews": [
+    {
+      "id": "b47f",
+      "name": "shiv",
+      "email": "shekharshiv02@gmail.com",
+      "comment": "so so",
+      "score": "3",
+      "productId": 1
+    }
+  ]
+}
