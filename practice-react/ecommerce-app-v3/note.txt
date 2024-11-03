@@ -1,0 +1,7 @@
+1)new features themeselector
+2)protected routes
+3) additional pages in spa
+4)login 5)register using sessionstorage
+6) filter
+7) review
+8) add to cart
