@@ -1,0 +1,3 @@
+read the question in word file and in public asset there is xlsx file from where data is shared.
+new things that I have used are getting data from xlsx file, downloading data into xlsx file, 
+downloading the page component in pdf, using chart with data, problem order date (45512 instead of date) and using context api for central state management
