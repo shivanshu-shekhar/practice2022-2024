@@ -1,2 +1,0 @@
-inside my ResponsiveNavbar.tsx there is conditional rendering for if doRenaming is true then show RenamingPrompt else do as given 
-doRenaming comes from context api and there is function toggleRenaming for toggling true and false
