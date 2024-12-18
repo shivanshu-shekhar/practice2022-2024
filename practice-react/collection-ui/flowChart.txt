@@ -1,0 +1,38 @@
++----------------+
+|      App       |
++----------------+
+         |
+         v
++----------------+
+|  DataProvider  |
+|  (Context)     |
++----------------+
+         |
+         v
++------------------------+
+|  FullPageFlexbox       |---------------------------------------------------------------
++------------------------+                              |                               |
+         |                                              |                               |
+         v                                              v                               v
++------------------------+                 +------------------------+          +------------------------+                  
+|    ResponsiveNavbar    |                 |    ResponsiveMenuBar   |          |     CardContainer      |              
++------------------------+                 +------------------------+          +------------------------+
+|  - Input Field         |                 |  - Menu Options        |          |  - Card Item           |                                
+|  - Clear Button        |                 +------------------------+          |  - NotFound            | <-- (conditional)                           
+|  - Motif Button        |                             /\                      +------------------------+
+|  - RenamingPrompt      | <-- (conditional)            .                              /\
++------------------------+                              .                               .
+           /\                                           .                               .
+            .                                           .                               .
+            .                                           .                               .
+            .                                       #----------------#                  .
+            ......................................  |  DataContext   |...................
+                                                    |-cardsData      |
+                                                    |-setCardsData   |
+                                                    |-doRenaming     |
+                                                    |-toggleRenaming |
+                                                    |-searchedData   |
+                                                    |-setSearchedData|
+                                                    |-searchedType   |
+                                                    |-setSearchedType| <--(Context)
+                                                    #----------------#
