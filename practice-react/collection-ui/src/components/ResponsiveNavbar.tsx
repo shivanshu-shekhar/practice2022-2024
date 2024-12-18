@@ -9,7 +9,7 @@ const ResponsiveNavbar: React.FC = () => {
     if (!context) {
         return <div>Loading...</div>; // Handle the case where context is undefined
     }
-  const { doRenaming, toggleRenaming, cardsData,setSearchedData  } = context;  // Get doRenaming and toggleRenaming from context
+  const { doRenaming, toggleRenaming, setSearchedData  } = context;  // Get doRenaming and toggleRenaming from context
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
@@ -28,26 +28,26 @@ const ResponsiveNavbar: React.FC = () => {
     setSearchedData("");
   };
   
+
   return (
     <nav className="w-full h-[100%] p-1">
       <div className="flex flex-wrap  h-full">
         {/* Left Div */}
-        <div className="w-[390px] md:w-[390px] h-full p-4 max-md:pb-0 max-[410px]:pt-0 max-[410px]:h-[80px]">
+        <div className="w-[390px] md:w-[390px] h-[120px] p-4 max-md:pb-0 max-[410px]:pt-0 max-[410px]:h-[80px] ">
           <div className="sm:text-[28px] md:text-[30px] text-[32px] font-gilroyextrabold1 font-bold text-[#121212]">
-            collections{" "}
+            collections
           </div>
           <div className="text-[16px] font-gilroysemibold text-[#717274] mt-0">
             personalized content storyboards
           </div>
         </div>
         {/* Gap */}
-        <div className="flex-grow"></div> {/* This div creates the gap */}
-        {/* Right Div */}
-        {doRenaming ? (
-              <RenamingPrompt />
-          ) : (
-          <div className={`w-[390px] md:w-[390px] h-full p-4 max-md:py-0`}>
-          <div className="w-full md:w-full h-[50%]  flex ">
+        <div className="flex-grow h-[120px] max-[420px]:h-0"></div> {/* This div creates the gap */}
+        {/* Right Div max-md:py-0 */}
+        <div className="flex flex-col  space-y-4 ">
+          <div className={`w-[390px] md:w-[390px] max-[376px]:w-[340px] transition-all duration-500 ease-in-out overflow-hidden ${doRenaming ? 
+            'h-[0px]':'h-[120px]'} p-4`}>
+          <div className={`w-full md:w-full h-[50%]  flex ${doRenaming?'hidden': 'flex'}`}>
             <div className="w-[85%] h-full border-[1px] border-[#DBDBDB] rounded-[10px] p-[3px] flex items-center">
               <img
                 src={`${process.env.PUBLIC_URL}/assets/icons/search-label-icon.png`}
@@ -68,7 +68,7 @@ const ResponsiveNavbar: React.FC = () => {
                   alt="Close"
                   className="h-[44%] w-[4%] cursor-pointer ml-2"
                   onClick={handleClearInput} // Clear input on click
-                />
+                />//appearing (x) aka close  icon
               )}
             </div>
             <div className="w-[10%] h-full border-[1px] border-[#DBDBDB] rounded-[10px] p-[1px] flex 
@@ -87,7 +87,7 @@ const ResponsiveNavbar: React.FC = () => {
               />
             </div>
           </div>
-          <div className="w-full md:w-full h-[45%] mt-2 flex ">
+          <div className={`w-full md:w-full h-[45%] mt-2 flex ${doRenaming?'hidden': 'flex'}`}>
             <div className="w-[10%] h-full border-[1px] border-[#DBDBDB] rounded-[10px] p-[1px] flex items-center  
                justify-center  relative group" onClick={toggleRenaming}>
               <img
@@ -140,7 +140,9 @@ const ResponsiveNavbar: React.FC = () => {
               <p>Create new collection</p>
             </div>
           </div>
-        </div>)}
+        </div>
+        <RenamingPrompt />
+        </div>
       </div>
       
     </nav>
@@ -148,3 +150,10 @@ const ResponsiveNavbar: React.FC = () => {
 };
 
 export default ResponsiveNavbar;
+
+//conditional rendering is happening
+// interactive elements are there
+// triggering and finalizing renaming operation 
+// setting of the searched data after optemiztion
+// having its state and also gettng shared state values there changing also occurs here that change other aspects of the page
+//added the animation for conditional rendering for renaming prompt appearing and disappearing
